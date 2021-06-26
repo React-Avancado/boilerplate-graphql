@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const Main = styled.main`
-  max-width: 1200px;
-  margin: auto;
+  background: #ade1e2;
 `
 
 export const Title = styled.h1`
@@ -13,6 +12,8 @@ export const Title = styled.h1`
 
 export const Grid = styled.div`
   display: grid;
+  max-width: 1200px;
+  margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 32px;
   padding-bottom: 64px;
