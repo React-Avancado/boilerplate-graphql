@@ -1,0 +1,10 @@
+overwrite: true
+schema: "https://rickandmortyapi.com/graphql"
+documents: "src/graphql/**/*.ts"
+generates:
+  src/graphql/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - add:
+          content: '/* eslint-disable */'
