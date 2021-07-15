@@ -1,5 +1,4 @@
-import { addDecorator } from '@storybook/react'
-import { withNextRouter } from 'storybook-addon-next-router'
+import { RouterContext } from 'next/dist/next-server/lib/router-context'
 import GlobalStyles from '../src/styles/global'
 
 import * as nextImage from 'next/image'
@@ -11,8 +10,11 @@ Object.defineProperty(nextImage, 'default', {
   value: (props) => <img {...props} />
 })
 
-// This is needed to use next/link
-addDecorator(withNextRouter())
+export const parameters = {
+  nextRouter: {
+    Provider: RouterContext.Provider
+  }
+}
 
 export const decorators = [
   (Story) => (
