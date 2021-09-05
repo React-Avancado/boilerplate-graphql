@@ -14,7 +14,6 @@ export type Scalars = {
   Upload: any;
 };
 
-
 export enum CacheControlScope {
   Public = 'PUBLIC',
   Private = 'PRIVATE'
@@ -200,17 +199,7 @@ export type QueryEpisodesByIdsArgs = {
   ids: Array<Scalars['ID']>;
 };
 
-
 export type GetCharactersQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetCharactersQuery = (
-  { __typename?: 'Query' }
-  & { characters?: Maybe<(
-    { __typename?: 'Characters' }
-    & { results?: Maybe<Array<Maybe<(
-      { __typename?: 'Character' }
-      & Pick<Character, 'name' | 'image'>
-    )>>> }
-  )> }
-);
+export type GetCharactersQuery = { __typename?: 'Query', characters?: Maybe<{ __typename?: 'Characters', results?: Maybe<Array<Maybe<{ __typename?: 'Character', name?: Maybe<string>, image?: Maybe<string> }>>> }> };
