@@ -2,6 +2,8 @@
 
 This is a very simple boilerplate made with [Next.js](https://nextjs.org/) and [GraphQL Request](https://github.com/prisma-labs/graphql-request) to start small projects with GraphQL.
 
+[**View Demo**](https://boilerplate-graphql-demo.vercel.app/)
+
 ## What is inside?
 
 This project uses lot of stuff as:
