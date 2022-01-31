@@ -36,7 +36,7 @@
     "@graphql-codegen/cli": "2.4.0",
     "@graphql-codegen/typescript": "2.4.2",
     "@graphql-codegen/typescript-operations": "2.2.2",
-    "@storybook/addon-essentials": "6.4.14",
+    "@storybook/addon-essentials": "6.4.17",
     "@storybook/builder-webpack5": "^6.4.14",
     "@storybook/manager-webpack5": "^6.4.14",
     "@storybook/react": "6.4.14",
